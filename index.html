@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculatrice">
+      <div class="display-panel">
+        <div id="expression" class="expression">0</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="btn secondary" data-action="clear">C</button>
+        <button class="btn secondary" data-action="delete">⌫</button>
+        <button class="btn secondary" data-action="percent">%</button>
+        <button class="btn operator" data-action="operator" data-value="/">÷</button>
+
+        <button class="btn" data-action="number" data-value="7">7</button>
+        <button class="btn" data-action="number" data-value="8">8</button>
+        <button class="btn" data-action="number" data-value="9">9</button>
+        <button class="btn operator" data-action="operator" data-value="*">×</button>
+
+        <button class="btn" data-action="number" data-value="4">4</button>
+        <button class="btn" data-action="number" data-value="5">5</button>
+        <button class="btn" data-action="number" data-value="6">6</button>
+        <button class="btn operator" data-action="operator" data-value="-">−</button>
+
+        <button class="btn" data-action="number" data-value="1">1</button>
+        <button class="btn" data-action="number" data-value="2">2</button>
+        <button class="btn" data-action="number" data-value="3">3</button>
+        <button class="btn operator" data-action="operator" data-value="+">+</button>
+
+        <button class="btn wide" data-action="sign">±</button>
+        <button class="btn" data-action="number" data-value="0">0</button>
+        <button class="btn" data-action="decimal">.</button>
+        <button class="btn equals" data-action="equals">=</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
